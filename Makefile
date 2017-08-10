@@ -1,4 +1,4 @@
-BEATNAME=iftopbeat
+BEAT_NAME=iftopbeat
 BEAT_DIR=github.com/yuemin-li/iftopbeat
 SYSTEM_TESTS=false
 TEST_ENVIRONMENT=false
@@ -10,8 +10,9 @@ PREFIX?=.
 -include $(ES_BEATS)/libbeat/scripts/Makefile
 
 # Initial beat setup
-.PHONY: setup
-setup: copy-vendor
+.PHONY: build
+build:
+	glide install
 	make update
 
 # Copy beats into vendor directory

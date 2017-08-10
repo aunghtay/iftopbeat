@@ -1,0 +1,5 @@
+iftopbeat:
+  period: 10s
+  interval: 10
+  listenOn: "eth0"
+  numLines: 10

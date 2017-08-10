@@ -7,8 +7,9 @@
         }
       },
       "_meta": {
-        "version": "6.0.0-alpha1"
+        "version": "5.6.0"
       },
+      "date_detection": false,
       "dynamic_templates": [
         {
           "strings_as_keyword": {
@@ -44,8 +45,33 @@
             }
           }
         },
-        "counter": {
-          "type": "long"
+        "destination": {
+          "index": "analyzed",
+          "norms": {
+            "enabled": false
+          },
+          "type": "string"
+        },
+        "download": {
+          "index": "analyzed",
+          "norms": {
+            "enabled": false
+          },
+          "type": "string"
+        },
+        "interface": {
+          "index": "analyzed",
+          "norms": {
+            "enabled": false
+          },
+          "type": "string"
+        },
+        "interval": {
+          "index": "analyzed",
+          "norms": {
+            "enabled": false
+          },
+          "type": "string"
         },
         "meta": {
           "properties": {
@@ -85,9 +111,23 @@
             }
           }
         },
+        "source": {
+          "index": "analyzed",
+          "norms": {
+            "enabled": false
+          },
+          "type": "string"
+        },
         "tags": {
           "ignore_above": 1024,
           "index": "not_analyzed",
+          "type": "string"
+        },
+        "upload": {
+          "index": "analyzed",
+          "norms": {
+            "enabled": false
+          },
           "type": "string"
         }
       }

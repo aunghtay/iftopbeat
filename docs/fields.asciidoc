@@ -1,6 +1,6 @@
 
 ////
-This file is generated! See etc/fields.yml and scripts/generate_field_docs.py
+This file is generated! See _meta/fields.yml and scripts/generate_field_docs.py
 ////
 
 [[exported-fields]]
@@ -128,12 +128,56 @@ None
 
 
 [float]
-=== counter
+=== interface
 
-type: long
+type: text
 
 required: True
 
-PLEASE UPDATE DOCUMENTATION
+Interface
 
+[float]
+=== interval
+
+type: text
+
+required: True
+
+Interval
+
+[float]
+=== source
+
+type: text
+
+required: True
+
+Source
+
+[float]
+=== destination
+
+type: text
+
+required: True
+
+Destination
+
+[float]
+=== upload
+
+type: text
+
+required: True
+
+Upload
+
+[float]
+=== download
+
+type: text
+
+required: True
+
+Download
 

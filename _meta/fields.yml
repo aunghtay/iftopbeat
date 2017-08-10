@@ -1,0 +1,28 @@
+- key: iftopbeat
+  title: iftopbeat
+  description:
+  fields:
+    - name: interface
+      type: text
+      required: true
+      description: 'Interface'
+    - name: interval
+      type: text
+      required: true
+      description: 'Interval'
+    - name: source
+      type: text
+      required: true
+      description: 'Source'
+    - name: destination
+      type: text
+      required: true
+      description: 'Destination'
+    - name: upload
+      type: text
+      required: true
+      description: 'Upload'
+    - name: download
+      type: text
+      required: true
+      description: 'Download'

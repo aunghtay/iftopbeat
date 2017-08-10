@@ -1,15 +1,7 @@
-################### Iftopbeat Configuration Example #########################
-
-############################# Iftopbeat ######################################
-
 iftopbeat:
-  # Defines how often an event is sent to the output (in seconds)
-  period: 20
-  # Defines how often the iftop gathers results
+  period: 10s
   interval: 10
-  # Defines which interface iftop is monitoring
-  listenOn: "enp0s3"
-  # Defines the limitation of lines iftop outputs each time
+  listenOn: "eth0"
   numLines: 10
 
 #================================ General =====================================
@@ -38,9 +30,9 @@ output.elasticsearch:
   hosts: ["localhost:9200"]
 
   # Optional protocol and basic auth credentials.
-  protocol: "http"
-  username: "elastic"
-  password: "changeme"
+  #protocol: "https"
+  #username: "elastic"
+  #password: "changeme"
 
 #----------------------------- Logstash output --------------------------------
 #output.logstash:

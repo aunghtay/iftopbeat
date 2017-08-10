@@ -1,0 +1,7 @@
+package: github.com/yuemin-li/iftopbeat
+description: "Elastic Beat for iftop"
+import:
+
+  ## 3rd Party
+- package: github.com/elastic/beats
+  version: ^5.5.1

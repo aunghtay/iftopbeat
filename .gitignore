@@ -6,5 +6,8 @@
 /iftopbeat.test
 *.pyc
 
+# runtime logs
+logs
+
 # IDE
 .vscode
